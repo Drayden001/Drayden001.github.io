@@ -1,0 +1,126 @@
+/* Reset some default styles for better consistency */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7d705e;
+    
+}
+
+/* Header styles */
+header {
+        background-color: #4C443C;
+
+    /*background: rgb(255,219,69);
+    background: linear-gradient(0deg, rgba(255,219,69,1) 0%, rgba(255,76,1,1) 100%);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px ;
+}
+h1{
+    color:#fa6363;
+}
+
+.logo {
+    padding-bottom: 0px;
+    border-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #322214;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+}
+
+section h1 {
+    color: #7C898B;
+}
+
+/* Footer styles */
+footer {
+    background-color: #4C443C;
+    color: #322214;
+    text-align: center;
+    padding: 10px;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #f17709;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #f5a238;}
+
+
+.grid-container{
+  display: grid;
+  column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: 20em 20em 20em 20em ;
+  grid-template-rows: 20em 20em ;
+  background-color:#f17709;
+  padding-top: 10px;
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-bottom: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  font-size: 30px;
+  text-align: center;
+}
+.grid-item:hover {
+  border: red
+}
+.item-1{
+  grid-column: 2;
+  grid-row:1 / span 1;
+}
+.item-2{
+  grid-column: 3;
+  grid-row:1 / span 1;
+}
+.item-3{
+  grid-column: 4;
+  grid-row:1 /span 1;
+}
+
+.title{
+    color:#fa6363;
+    text-align: center;
+
+}
